@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //password change
+        //step 1:oldpass,newpass,confirmpass
+        //step 2:oldpass==newpass=>password already used
+            //   newpass==confpass=>password change succesfully
+        
+    let oldpass,newpass,confpass
+
+    oldpass=prompt("enter your old pass !!")
+    newpass=prompt("enter your new pass !!")
+    confpass=prompt("enter your confirm pass !!")
+    
+    if(oldpass == newpass){
+        console.log("password is alredy used");
+    }else{
+        if(newpass!=confpass){
+            console.log("new password & confirm passwoed is not matched");    
+        }
+        else{
+            console.warm("your password is succesfully changed");
+            
+        }
+    }
+    </script>
+</body>
+</html>
