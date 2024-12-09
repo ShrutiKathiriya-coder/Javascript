@@ -88,25 +88,6 @@
 //     i++;
 // }
 
-// Method 2:
-
-// let a = +prompt("Enter a Number:");
-// let x = 0, y = 1, z;
-// let i = 1;
-
-// while (i <= a) {
-//     if (i == 1) {
-//         console.log(x);
-//     } else if (i == 2) {
-//         console.log(y);
-//     } else {
-//         z = x + y;
-//         x = y;
-//         y = z;
-//         console.log(z);
-//     }
-//     i++;
-// }
 
 // 10) Series print out 1, 4, 12, 32, 80, 192, 448 .......
 
