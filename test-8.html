@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>Countdown Timer</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #000;
+            color: #fff;
+            font-family: Arial, sans-serif;
+        }
+        .countdown {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .section {
+            text-align: center;
+        }
+        .digits {
+            display: flex;
+            gap: 5px;
+        }
+        .digit {
+            width: 60px;
+            height: 100px;
+            font-size: 48px;
+            font-weight: bold;
+            color: #fff;
+            background: linear-gradient(to bottom, #222, #444);
+            border-radius: 10px;
+            border: 2px solid #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+        .label {
+            margin-top: 10px;
+            font-size: 18px;
+            text-transform: uppercase;
+        }
+        .colon {
+            font-size: 48px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="countdown">
+        <div class="section">
+            <div class="digits">
+                <div class="digit" id="h-1">0</div>
+                <div class="digit" id="h-2">0</div>
+            </div>
+            <div class="label">Hours</div>
+        </div>
+        <div class="colon">:</div>
+        <div class="section">
+            <div class="digits">
+                <div class="digit" id="m-1">0</div>
+                <div class="digit" id="m-2">0</div>
+            </div>
+            <div class="label">Minutes</div>
+        </div>
+        <div class="colon">:</div>
+        <div class="section">
+            <div class="digits">
+                <div class="digit" id="s-1">0</div>
+                <div class="digit" id="s-2">0</div>
+            </div>
+            <div class="label">Seconds</div>
+        </div>
+    </div>
+    <script>
+       
+        var target = new Date("January 30, 2027 15:37:25").getTime();
+
+        var countdown = setInterval(() => {
+            let now = new Date().getTime();
+            let distance = target - now;
+
+            if (distance < 0) {
+                clearInterval(countdown);
+                document.querySelectorAll(".digit").forEach(digit => digit.innerText = "0");
+                return;
+            }
+            let hours = Math.floor((distance / (1000 * 60 * 60)) % 24);
+            let minutes = Math.floor((distance / (1000 * 60)) % 60);
+            let seconds = Math.floor((distance / 1000) % 60);
+
+            document.getElementById("h-1").innerText = Math.floor(hours / 10);
+            document.getElementById("h-2").innerText = hours % 10;
+            document.getElementById("m-1").innerText = Math.floor(minutes / 10);
+            document.getElementById("m-2").innerText = minutes % 10;
+            document.getElementById("s-1").innerText = Math.floor(seconds / 10);
+            document.getElementById("s-2").innerText = seconds % 10;
+        }, 1000);
+    </script>
+</body>
+</html>
