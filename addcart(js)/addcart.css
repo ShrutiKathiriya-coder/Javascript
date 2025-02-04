@@ -1,0 +1,211 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+} 
+.container{
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+a{
+    text-decoration: none;
+}
+.d-flex{
+    display: flex;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.text-center{
+    text-align: center;
+}
+/* header  */
+.header{
+    background-color:rgb(125, 165, 186);
+    padding: 25px;
+}
+header a{
+    font-size: 24px;
+    color: white;
+}
+/* form  */
+.w-2{
+    width: 50%;
+}
+.w-3{
+    width: 40%;
+}
+.w-7{
+    width: 60%;
+}
+.form-container {
+max-width: 1320px;
+margin: 20px 60px;
+padding: 20px;
+background-color: white;
+border-radius: 8px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.form-container h1 {
+font-size: 24px;
+margin-bottom: 20px;
+}
+.form-container label {
+font-size: 16px;
+margin-bottom: 8px;
+display: block;
+}
+.form-container input {
+width: 100%;
+padding: 12px;
+margin-bottom: 20px;
+border: 1px solid #ddd;
+border-radius: 4px;
+font-size: 16px;
+}
+.form-container button {
+width: 100%;
+padding: 12px;
+background-color:  rgb(125, 165, 186);
+color: white;
+border: none;
+border-radius: 4px;
+font-size: 18px;
+cursor: pointer;
+}
+.form-container button:hover {
+background-color:white;
+color:rgb(125, 165, 186);
+border:1px solid rgb(125, 165, 186);
+}
+.add-to-card h2 {
+font-size: 22px;
+color: #333;
+margin-top: 40px;
+}
+
+/* product list  */
+.prolist {
+width: 60%;
+margin: 20px 90px;
+padding: 20px;
+background-color: #f8f8f8;
+border-radius: 10px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.341);
+text-align: center;
+}
+
+.prolist h3 {
+font-size: 24px;
+color: black;
+margin-bottom: 15px;
+}
+
+.prolist table {
+width: 100%;
+background: white;
+border-radius: 30px;
+overflow: hidden;
+}
+
+.prolist th, .prolist td {
+padding: 10px;
+border: 1px solid #ddd;
+text-align: center;
+}
+
+.prolist td{
+background-color: rgb(125, 165, 186);
+color: white;
+}
+
+.prolist tr:nth-child(even) {
+background-color: #f2f2f2;
+}
+
+.prolist img {
+width: 50px;
+height: 50px;
+border-radius: 5px;
+}
+
+.prolist button {
+background:rgb(6, 84, 92);
+color: white;
+border: none;
+padding: 5px 10px;
+border-radius: 5px;
+cursor: pointer;
+font-size: 14px;
+transition: 0.5s;
+}
+.prolist button:hover {
+background:rgb(125, 170, 186);
+}
+.prolist .delete-product {
+background:rgb(6, 84, 92);
+margin-top: 20px;
+}
+.prolist .delete-product:hover{
+background-color:rgb(125, 165, 186);
+color: white;
+}
+.prolist, .cart-container {
+width: 60%;
+margin: 90px;
+padding: 20px;
+background: white;
+border-radius: 10px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+text-align: center;
+}
+table {
+width: 100%;
+border-collapse: collapse;
+margin-top: 10px;
+}
+
+th, td {
+border: 1px solid #ddd;
+padding: 12px;
+text-align: center;
+}
+
+th {
+background: rgb(125, 165, 186);
+color: white;
+font-size: 16px;
+}
+button {
+background: #2e55cc;
+color: white;
+border: none;
+padding: 8px 12px;
+border-radius: 5px;
+cursor: pointer;
+font-size: 14px;
+}
+button:hover {
+background: #2797ae;
+}
+.delete-product, .remove-cart {
+background: rgba(68, 88, 177, 0.579);
+}
+
+.delete-product:hover, .remove-cart:hover {
+background: rgb(18, 73, 102);
+}
+img {
+border-radius: 5px;
+width: 50px;
+height: 50px;
+object-fit: cover;
+}
+
