@@ -1,0 +1,76 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    .container {
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: center;
+            overflow: hidden;
+            position: relative;
+        }
+        .slide {
+            min-width: 100%;
+            background-color: black;
+            color: white;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .btn {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+        .btn button {
+            padding: 10px 20px;
+            border: none;
+            background: pink;
+            color:black;
+            cursor: pointer;
+        }
+        .slider {
+                width: 300px;
+                overflow: hidden;
+        }
+        .slides {
+             display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+</style>
+</head>
+<body>
+   <div class="container">
+    <div class="slider">
+        <div class="slides">
+            <div class="slide">
+                <p>“Two things are infinite: the universe and human stupidity; and I'm not sure about the universe.</p>
+                <h4>— Oscar Wilde</h4>
+            </div>
+            <div class="slide">
+                <p>“A room without books is like a body without a soul.”</p>
+                <h4>— Frank Zappa</h4>
+            </div>
+            <div class="slide">
+                <p>“Be the change that you wish to see in the world.”</p>
+                <h4>— Mahatma Gandhi</h4>
+            </div>
+            <div class="slide">
+                <p>
+                    “If you tell the truth, you don't have to remember anything.”</p>
+                <h4>— Frank Zappa</h4>
+            </div>
+        </div>
+        <div class="btn">
+            <button onclick="prevSlide()">Previous</button>
+            <button onclick="nextSlide()">Next</button>
+        </div>
+    </div>
+   </div>
+
+<script src="test-6.js"></script>
+
+</body>
+</html>
